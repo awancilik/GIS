@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="puskesmasGISData" Class="GISPuskesmasDataClassesDataContext" Serialization="Unidirectional" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=SIGPuskesmas.mssql.somee.com;Initial Catalog=SIGPuskesmas;Persist Security Info=True;User ID=poli_SQLLogin_1" SettingsObjectName="GISPuskesmasData.Properties.Settings" SettingsPropertyName="SIGPuskesmasConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Kecamatan" Member="Kecamatans">
+    <Type Name="Kecamatan">
+      <Column Name="IdKecamatan" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Nama" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Keterangan" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="DibuatTanggal" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="DibuatOleh" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DibaruiTanggal" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="DibaruiOleh" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Association Name="Kecamatan_Puskesma" Member="Puskesmas" ThisKey="IdKecamatan" OtherKey="IdKecamatan" Type="Puskesma" />
+    </Type>
+  </Table>
+  <Table Name="dbo.V_Kecamatan" Member="V_Kecamatans">
+    <Type Name="V_Kecamatan">
+      <Column Name="IdKecamatan" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="namakecamatan" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="keterangan" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="dibuattanggal" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="dibuatoleh" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="dibaruitanggal" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="dibaruioleh" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PenggunaWeb" Member="PenggunaWebs">
+    <Type Name="PenggunaWeb">
+      <Column Name="UserName" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Password" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Nama" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="HakAkses" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Pegawai" Member="Pegawais">
+    <Type Name="Pegawai">
+      <Column Name="IdPegawai" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="JenisPegawai" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Keterangan" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DibuatTanggal" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="DibuatOleh" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DibaruiTanggal" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="DibaruiOleh" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Association Name="Pegawai_PuskesmasDetail" Member="PuskesmasDetails" ThisKey="IdPegawai" OtherKey="IdPegawai" Type="PuskesmasDetail" />
+    </Type>
+  </Table>
+  <Table Name="dbo.V_Pegawai" Member="V_Pegawais">
+    <Type Name="V_Pegawai">
+      <Column Name="IdPegawai" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="JenisPegawai" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Keterangan" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="dibuattanggal" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="dibuatoleh" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="dibaruioleh" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="dibaruitanggal" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PuskesmasDetail" Member="PuskesmasDetails">
+    <Type Name="PuskesmasDetail">
+      <Column Name="IdPuskesmasDetail" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IdPuskesmas" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IdPegawai" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Jumlah" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Keterangan" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DibuatTanggal" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="DibuatOleh" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DibaruiTanggal" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="DibaruiOleh" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Association Name="Pegawai_PuskesmasDetail" Member="Pegawai" ThisKey="IdPegawai" OtherKey="IdPegawai" Type="Pegawai" IsForeignKey="true" />
+      <Association Name="Puskesma_PuskesmasDetail" Member="Puskesma" ThisKey="IdPuskesmas" OtherKey="IdPuskesmas" Type="Puskesma" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.V_Puskesmas_Detail" Member="V_Puskesmas_Details">
+    <Type Name="V_Puskesmas_Detail">
+      <Column Name="IdPuskesmasDetail" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdPuskesmas" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdPegawai" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="JenisPegawai" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Jumlah" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Keterangan" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DibuatTanggal" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="DibuatOleh" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DibaruiTanggal" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="DibaruiOleh" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Puskesmas" Member="Puskesmas">
+    <Type Name="Puskesma">
+      <Column Name="IdPuskesmas" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IdKecamatan" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NamaPuskesmas" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="KodePuskesmas" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Alamat" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="JenisPuskesmas" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Latitude" Type="System.Decimal" DbType="Decimal(18,6)" CanBeNull="true" />
+      <Column Name="Longitude" Type="System.Decimal" DbType="Decimal(18,6)" CanBeNull="true" />
+      <Column Name="Keterangan" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="DibuatTanggal" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="DibuatOleh" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DibaruiTanggal" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="DibaruiOleh" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Association Name="Puskesma_PuskesmasDetail" Member="PuskesmasDetails" ThisKey="IdPuskesmas" OtherKey="IdPuskesmas" Type="PuskesmasDetail" />
+      <Association Name="Puskesma_Info" Member="Infos" ThisKey="IdPuskesmas" OtherKey="IdPuskesmas" Type="Info" />
+      <Association Name="Kecamatan_Puskesma" Member="Kecamatan" ThisKey="IdKecamatan" OtherKey="IdKecamatan" Type="Kecamatan" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.V_Puskesmas" Member="V_Puskesmas">
+    <Type Name="V_Puskesma">
+      <Column Name="IdPuskesmas" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdKecamatan" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NamaKecamatan" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="NamaPuskesmas" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="KodePuskesmas" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Alamat" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="JenisPuskesmas" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="latitude" Type="System.Decimal" DbType="Decimal(18,6)" CanBeNull="true" />
+      <Column Name="longitude" Type="System.Decimal" DbType="Decimal(18,6)" CanBeNull="true" />
+      <Column Name="keterangan" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="DibuatTanggal" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="DibuatOleh" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DibaruiTanggal" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="DibaruiOleh" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Kategori" Member="Kategoris">
+    <Type Name="Kategori">
+      <Column Name="KategoriID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="NamaKategori" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Association Name="Kategori_Berita" Member="Beritas" ThisKey="KategoriID" OtherKey="KategoriID" Type="Berita" />
+    </Type>
+  </Table>
+  <Table Name="dbo.V_Kategori" Member="V_Kategoris">
+    <Type Name="V_Kategori">
+      <Column Name="KategoriID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="NamaKategori" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.V_Berita" Member="V_Beritas">
+    <Type Name="V_Berita">
+      <Column Name="BeritaID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Judul" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="PostDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Isi" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="KategoriID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Status" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Url" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Berita" Member="Beritas">
+    <Type Name="Berita">
+      <Column Name="BeritaID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Judul" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="PostDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Isi" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="KategoriID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Status" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Url" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Association Name="Berita_Komentar" Member="Komentars" ThisKey="BeritaID" OtherKey="BeritaID" Type="Komentar" />
+      <Association Name="Kategori_Berita" Member="Kategori" ThisKey="KategoriID" OtherKey="KategoriID" Type="Kategori" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.V_Info" Member="V_Infos">
+    <Type Name="V_Info">
+      <Column Name="InfoID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IdPuskesmas" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="InfoJudul" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="InfoPostDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="InfoIsi" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Info" Member="Infos">
+    <Type Name="Info">
+      <Column Name="InfoID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IdPuskesmas" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="InfoJudul" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="InfoPostDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="InfoIsi" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Association Name="Puskesma_Info" Member="Puskesma" ThisKey="IdPuskesmas" OtherKey="IdPuskesmas" Type="Puskesma" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Komentar" Member="Komentars">
+    <Type Name="Komentar">
+      <Column Name="KomentarID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="BeritaID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PostDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Nama" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="IsiKomentar" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Association Name="Berita_Komentar" Member="Berita" ThisKey="BeritaID" OtherKey="BeritaID" Type="Berita" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.V_Komentar" Member="V_Komentars">
+    <Type Name="V_Komentar">
+      <Column Name="KomentarID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="BeritaID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PostDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Nama" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="IsiKomentar" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+    </Type>
+  </Table>
+</Database>

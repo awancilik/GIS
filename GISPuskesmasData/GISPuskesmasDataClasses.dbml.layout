@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11.375, 14.125" name="GISPuskesmasDataClasses">
+  <DataContextMoniker Name="/GISPuskesmasDataClassesDataContext" />
+  <nestedChildShapes>
+    <classShape Id="717fc725-21eb-4fa4-b655-e6f21b126315" absoluteBounds="0.5, 0.5, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/GISPuskesmasDataClassesDataContext/Kecamatan" />
+      <nestedChildShapes>
+        <elementListCompartment Id="86a0e682-cea4-4ae2-9d1a-58c0f97f7e18" absoluteBounds="0.51500000000000012, 0.96, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7024b53c-4c12-427a-b2ea-1a9521b11011" absoluteBounds="0.5, 3.125, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/GISPuskesmasDataClassesDataContext/V_Kecamatan" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6a4e8b3c-ce5b-4456-b4a8-0e747bb46837" absoluteBounds="0.51500000000000012, 3.585, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a5d3187a-f426-42d4-91a5-edf5a334e0fa" absoluteBounds="5.5, 3.375, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/GISPuskesmasDataClassesDataContext/PenggunaWeb" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9abb5af5-4586-4954-97dc-ad7ea7d40bf5" absoluteBounds="5.515, 3.835, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="cfafc54e-d791-4c28-ab8b-a1479f1a1563" absoluteBounds="9.125, 0.5, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/GISPuskesmasDataClassesDataContext/Pegawai" />
+      <nestedChildShapes>
+        <elementListCompartment Id="765637c4-7430-4feb-bc98-0f92412f86af" absoluteBounds="9.14, 0.96, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2a4e0c9f-22e9-4ffc-8a62-67a6f6040d14" absoluteBounds="5.25, 5.375, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/GISPuskesmasDataClassesDataContext/V_Pegawai" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f0303b0b-bea0-4ff7-a8a5-1c19700989cf" absoluteBounds="5.265, 5.835, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1f41a7a8-6815-4855-b0ea-46f9f177c073" absoluteBounds="5.5, 0.5, 2, 2.5401025390625">
+      <DataClassMoniker Name="/GISPuskesmasDataClassesDataContext/PuskesmasDetail" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d042db25-93c9-43b7-9c67-f00333a4df17" absoluteBounds="5.515, 0.96, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(9.125 : 1.57774983723958); (7.5 : 1.57774983723958)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/GISPuskesmasDataClassesDataContext/Pegawai/Pegawai_PuskesmasDetail" />
+      <nodes>
+        <classShapeMoniker Id="cfafc54e-d791-4c28-ab8b-a1479f1a1563" />
+        <classShapeMoniker Id="1f41a7a8-6815-4855-b0ea-46f9f177c073" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="a8a60ee1-4c8a-43e5-b61c-7e99344cc4db" absoluteBounds="0.5, 6.125, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/GISPuskesmasDataClassesDataContext/V_Puskesmas_Detail" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7e73819f-0489-4e7d-8483-c63377819848" absoluteBounds="0.51500000000000012, 6.585, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a1a66e03-6272-4642-b55e-04885d13a0a0" absoluteBounds="3, 1.875, 2, 3.3093082682291666">
+      <DataClassMoniker Name="/GISPuskesmasDataClassesDataContext/Puskesma" />
+      <nestedChildShapes>
+        <elementListCompartment Id="588a93b8-765e-4295-bb7b-df6d1cd2bcbf" absoluteBounds="3.015, 2.335, 1.9700000000000002, 2.7493082682291665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5 : 2.45755126953125); (5.5 : 2.45755126953125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/GISPuskesmasDataClassesDataContext/Puskesma/Puskesma_PuskesmasDetail" />
+      <nodes>
+        <classShapeMoniker Id="a1a66e03-6272-4642-b55e-04885d13a0a0" />
+        <classShapeMoniker Id="1f41a7a8-6815-4855-b0ea-46f9f177c073" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.5 : 2.26524983723958); (3 : 2.26524983723958)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/GISPuskesmasDataClassesDataContext/Kecamatan/Kecamatan_Puskesma" />
+      <nodes>
+        <classShapeMoniker Id="717fc725-21eb-4fa4-b655-e6f21b126315" />
+        <classShapeMoniker Id="a1a66e03-6272-4642-b55e-04885d13a0a0" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="dd4579e6-2f66-4bb8-a507-8ce6eabadabf" absoluteBounds="3, 5.875, 2, 3.5016097005208326">
+      <DataClassMoniker Name="/GISPuskesmasDataClassesDataContext/V_Puskesma" />
+      <nestedChildShapes>
+        <elementListCompartment Id="47dd721f-2e64-49d2-84a9-f42c209100f4" absoluteBounds="3.0149999999999997, 6.335, 1.9700000000000002, 2.941609700520833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2a7de03d-f56a-4461-a2b9-e20b8833ee87" absoluteBounds="5.875, 7.75, 2, 1.1939925130208333">
+      <DataClassMoniker Name="/GISPuskesmasDataClassesDataContext/Kategori" />
+      <nestedChildShapes>
+        <elementListCompartment Id="632d0757-52ac-49f7-a871-0ba96d1a35d5" absoluteBounds="5.89, 8.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f3fccc40-2f35-4578-b83a-8940ab343a3e" absoluteBounds="7.375, 9.875, 2, 1.1939925130208333">
+      <DataClassMoniker Name="/GISPuskesmasDataClassesDataContext/V_Kategori" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2f522c2d-3758-43da-a803-cbc4e1c5a219" absoluteBounds="7.39, 10.335, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9f4e7222-921c-418a-bb22-c66544faa06b" absoluteBounds="4, 10.875, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/GISPuskesmasDataClassesDataContext/V_Berita" />
+      <nestedChildShapes>
+        <elementListCompartment Id="09bc5838-c051-4a40-a8f5-45d8052092ee" absoluteBounds="4.015, 11.335, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7e6a896e-a474-44d8-bc3d-ced55da93399" absoluteBounds="8.5, 3.75, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/GISPuskesmasDataClassesDataContext/Berita" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0019ef9f-7780-4dcd-918d-2db92e209634" absoluteBounds="8.515, 4.21, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(7.5937495 : 7.75); (7.5937495 : 5.16429768880208); (8.5 : 5.16429768880208)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/GISPuskesmasDataClassesDataContext/Kategori/Kategori_Berita" />
+      <nodes>
+        <classShapeMoniker Id="2a7de03d-f56a-4461-a2b9-e20b8833ee87" />
+        <classShapeMoniker Id="7e6a896e-a474-44d8-bc3d-ced55da93399" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="d167cf38-989b-4e69-b59e-df5d15f13848" absoluteBounds="0.625, 12.125, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/GISPuskesmasDataClassesDataContext/V_Info" />
+      <nestedChildShapes>
+        <elementListCompartment Id="46a73cd0-ad6a-4afc-9bf4-7dc214c4657b" absoluteBounds="0.63999999999999968, 12.585, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="56f16397-be17-4a1b-87d6-08c3f0a5fcda" absoluteBounds="5.125, 9.25, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/GISPuskesmasDataClassesDataContext/Info" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ed0b1205-2d79-41d9-9aab-816b149cda9b" absoluteBounds="5.14, 9.71, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(4 : 5.18430826822917); (4 : 5.8125); (5.0625 : 5.8125); (5.0625 : 10.0624995); (5.125 : 10.0624995)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/GISPuskesmasDataClassesDataContext/Puskesma/Puskesma_Info" />
+      <nodes>
+        <classShapeMoniker Id="a1a66e03-6272-4642-b55e-04885d13a0a0" />
+        <classShapeMoniker Id="56f16397-be17-4a1b-87d6-08c3f0a5fcda" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="d4f9db7a-4a23-4226-81bc-a2b2b9eed5e6" absoluteBounds="8.375, 7.125, 2, 1.9631982421875">
+      <DataClassMoniker Name="/GISPuskesmasDataClassesDataContext/Komentar" />
+      <nestedChildShapes>
+        <elementListCompartment Id="961f0624-a813-494d-922f-fb30bf3b18e9" absoluteBounds="8.39, 7.585, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(9.4375 : 5.90549967447917); (9.4375 : 7.125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/GISPuskesmasDataClassesDataContext/Berita/Berita_Komentar" />
+      <nodes>
+        <classShapeMoniker Id="7e6a896e-a474-44d8-bc3d-ced55da93399" />
+        <classShapeMoniker Id="d4f9db7a-4a23-4226-81bc-a2b2b9eed5e6" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="f450e963-33dc-412b-b4f0-231267b34baa" absoluteBounds="0.875, 9.375, 2, 1.9631982421875">
+      <DataClassMoniker Name="/GISPuskesmasDataClassesDataContext/V_Komentar" />
+      <nestedChildShapes>
+        <elementListCompartment Id="002b8860-0fa0-44eb-9795-4ae527e25053" absoluteBounds="0.89000000000000012, 9.835, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

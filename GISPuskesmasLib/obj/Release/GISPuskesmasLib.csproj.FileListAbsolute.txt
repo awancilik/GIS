@@ -1,0 +1,14 @@
+C:\Users\Paulus\Documents\Visual Studio 2012\Projects\GISPuskesmas\GISPuskesmasLib\bin\Release\GISPuskesmasLib.dll
+C:\Users\Paulus\Documents\Visual Studio 2012\Projects\GISPuskesmas\GISPuskesmasLib\bin\Release\GISPuskesmasLib.pdb
+C:\Users\Paulus\Documents\Visual Studio 2012\Projects\GISPuskesmas\GISPuskesmasLib\bin\Release\GISPuskesmasData.dll
+C:\Users\Paulus\Documents\Visual Studio 2012\Projects\GISPuskesmas\GISPuskesmasLib\bin\Release\GISPuskesmasData.pdb
+C:\Users\Paulus\Documents\Visual Studio 2012\Projects\GISPuskesmas\GISPuskesmasLib\obj\Release\GISPuskesmasLib.csprojResolveAssemblyReference.cache
+C:\Users\Paulus\Documents\Visual Studio 2012\Projects\GISPuskesmas\GISPuskesmasLib\obj\Release\GISPuskesmasLib.dll
+C:\Users\Paulus\Documents\Visual Studio 2012\Projects\GISPuskesmas\GISPuskesmasLib\obj\Release\GISPuskesmasLib.pdb
+C:\Users\awancilik\Downloads\Source Code\GISPUS\GISPuskesmasLib\bin\Release\GISPuskesmasLib.dll
+C:\Users\awancilik\Downloads\Source Code\GISPUS\GISPuskesmasLib\bin\Release\GISPuskesmasLib.pdb
+C:\Users\awancilik\Downloads\Source Code\GISPUS\GISPuskesmasLib\bin\Release\GISPuskesmasData.dll
+C:\Users\awancilik\Downloads\Source Code\GISPUS\GISPuskesmasLib\bin\Release\GISPuskesmasData.pdb
+C:\Users\awancilik\Downloads\Source Code\GISPUS\GISPuskesmasLib\obj\Release\GISPuskesmasLib.csprojResolveAssemblyReference.cache
+C:\Users\awancilik\Downloads\Source Code\GISPUS\GISPuskesmasLib\obj\Release\GISPuskesmasLib.dll
+C:\Users\awancilik\Downloads\Source Code\GISPUS\GISPuskesmasLib\obj\Release\GISPuskesmasLib.pdb

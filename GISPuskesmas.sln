@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GISPuskesmasLib", "GISPuskesmasLib\GISPuskesmasLib.csproj", "{097DE331-8B1F-4DD8-AB4E-FD48E09B2AC1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GISPuskesmasData", "GISPuskesmasData\GISPuskesmasData.csproj", "{26497F35-6056-4BC4-BDCB-2868B6015F20}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "GISPuskesmasWeb", "GISPuskesmasWeb\", "{1EC6E20E-86A4-4DC7-9810-45051A1FE334}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		ProjectReferences = "{097de331-8b1f-4dd8-ab4e-fd48e09b2ac1}|GISPuskesmasLib.dll;{26497F35-6056-4BC4-BDCB-2868B6015F20}|GISPuskesmasData.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/GISPuskesmasWeb"
+		Debug.AspNetCompiler.PhysicalPath = "GISPuskesmasWeb\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\GISPuskesmasWeb\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/GISPuskesmasWeb"
+		Release.AspNetCompiler.PhysicalPath = "GISPuskesmasWeb\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\GISPuskesmasWeb\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "13133"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{097DE331-8B1F-4DD8-AB4E-FD48E09B2AC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{097DE331-8B1F-4DD8-AB4E-FD48E09B2AC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{097DE331-8B1F-4DD8-AB4E-FD48E09B2AC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{097DE331-8B1F-4DD8-AB4E-FD48E09B2AC1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26497F35-6056-4BC4-BDCB-2868B6015F20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26497F35-6056-4BC4-BDCB-2868B6015F20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26497F35-6056-4BC4-BDCB-2868B6015F20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26497F35-6056-4BC4-BDCB-2868B6015F20}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1EC6E20E-86A4-4DC7-9810-45051A1FE334}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1EC6E20E-86A4-4DC7-9810-45051A1FE334}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1EC6E20E-86A4-4DC7-9810-45051A1FE334}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{1EC6E20E-86A4-4DC7-9810-45051A1FE334}.Release|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

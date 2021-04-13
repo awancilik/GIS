@@ -1,0 +1,46 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" runat="server">
+        </asp:ScriptManager>
+        <div>
+            <asp:ObjectDataSource ID="PuskesmasObjectDataSource" runat="server" SelectMethod="GetAllData" TypeName="GISPuskesmasLib.MasterData.VPuskesmas" />
+            <div>
+                <div style="display: inline-block;">
+                    Nama Kecamatan
+                </div>
+                <div style="display: inline-block;">
+                    <asp:DropDownList ID="SearchDropDownList" runat="server" DataSourceID="PuskesmasObjectDataSource" DataTextField="NamaPuskesmas"
+                        DataValueField="IdPuskesmas" AutoPostBack="false">
+                    </asp:DropDownList>
+                </div>
+                <div>
+                    Klik Pada Peta untuk mencari berdasarkan Nama Kecamatan
+                </div>
+            </div>
+          <%--<div style="float: right;">
+                <asp:Button ID="AdminLink" Text="Admin" runat="server" OnClick="AdminLink_Click" />
+            </div>--%>
+            <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+                <ContentTemplate>
+                    <Reimers:Map ID="Map1" runat="server" Width="100%" Height="550" DefaultMapType="ROADMAP" Zoom="12"
+                        OnOverlayClick="Map1_OverlayClick" OnClick="Map1_Click">
+                        <Center Latitude="-3.706597" Longitude="128.163486" />
+                    </Reimers:Map>
+                </ContentTemplate>
+            </asp:UpdatePanel>
+        </div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </form>
+</body>
+</html>

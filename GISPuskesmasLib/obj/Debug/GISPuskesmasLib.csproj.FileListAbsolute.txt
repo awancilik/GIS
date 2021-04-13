@@ -1,0 +1,28 @@
+C:\Users\Paulus\Documents\Visual Studio 2012\Projects\GISPuskesmas\GISPuskesmasLib\bin\Debug\GISPuskesmasLib.dll
+C:\Users\Paulus\Documents\Visual Studio 2012\Projects\GISPuskesmas\GISPuskesmasLib\bin\Debug\GISPuskesmasLib.pdb
+C:\Users\Paulus\Documents\Visual Studio 2012\Projects\GISPuskesmas\GISPuskesmasLib\bin\Debug\GISPuskesmasData.dll
+C:\Users\Paulus\Documents\Visual Studio 2012\Projects\GISPuskesmas\GISPuskesmasLib\bin\Debug\GISPuskesmasData.pdb
+C:\Users\Paulus\Documents\Visual Studio 2012\Projects\GISPuskesmas\GISPuskesmasLib\obj\Debug\GISPuskesmasLib.csprojResolveAssemblyReference.cache
+C:\Users\Paulus\Documents\Visual Studio 2012\Projects\GISPuskesmas\GISPuskesmasLib\obj\Debug\GISPuskesmasLib.dll
+C:\Users\Paulus\Documents\Visual Studio 2012\Projects\GISPuskesmas\GISPuskesmasLib\obj\Debug\GISPuskesmasLib.pdb
+E:\ToDo\FRAME DATA\GIS\Source Code\GISPuskesmasLib\bin\Debug\GISPuskesmasLib.dll
+E:\ToDo\FRAME DATA\GIS\Source Code\GISPuskesmasLib\bin\Debug\GISPuskesmasLib.pdb
+E:\ToDo\FRAME DATA\GIS\Source Code\GISPuskesmasLib\bin\Debug\GISPuskesmasData.dll
+E:\ToDo\FRAME DATA\GIS\Source Code\GISPuskesmasLib\bin\Debug\GISPuskesmasData.pdb
+E:\ToDo\FRAME DATA\GIS\Source Code\GISPuskesmasLib\obj\Debug\GISPuskesmasLib.csprojResolveAssemblyReference.cache
+E:\ToDo\FRAME DATA\GIS\Source Code\GISPuskesmasLib\obj\Debug\GISPuskesmasLib.dll
+E:\ToDo\FRAME DATA\GIS\Source Code\GISPuskesmasLib\obj\Debug\GISPuskesmasLib.pdb
+C:\Users\awancilik\Downloads\Source Code\GISPUS\GISPuskesmasLib\bin\Debug\GISPuskesmasLib.dll
+C:\Users\awancilik\Downloads\Source Code\GISPUS\GISPuskesmasLib\bin\Debug\GISPuskesmasLib.pdb
+C:\Users\awancilik\Downloads\Source Code\GISPUS\GISPuskesmasLib\bin\Debug\GISPuskesmasData.dll
+C:\Users\awancilik\Downloads\Source Code\GISPUS\GISPuskesmasLib\bin\Debug\GISPuskesmasData.pdb
+C:\Users\awancilik\Downloads\Source Code\GISPUS\GISPuskesmasLib\obj\Debug\GISPuskesmasLib.csprojResolveAssemblyReference.cache
+C:\Users\awancilik\Downloads\Source Code\GISPUS\GISPuskesmasLib\obj\Debug\GISPuskesmasLib.dll
+C:\Users\awancilik\Downloads\Source Code\GISPUS\GISPuskesmasLib\obj\Debug\GISPuskesmasLib.pdb
+C:\Users\moon\Downloads\GIS\GISPUS\GISPuskesmasLib\bin\Debug\GISPuskesmasLib.dll
+C:\Users\moon\Downloads\GIS\GISPUS\GISPuskesmasLib\bin\Debug\GISPuskesmasLib.pdb
+C:\Users\moon\Downloads\GIS\GISPUS\GISPuskesmasLib\bin\Debug\GISPuskesmasData.dll
+C:\Users\moon\Downloads\GIS\GISPUS\GISPuskesmasLib\bin\Debug\GISPuskesmasData.pdb
+C:\Users\moon\Downloads\GIS\GISPUS\GISPuskesmasLib\obj\Debug\GISPuskesmasLib.csprojResolveAssemblyReference.cache
+C:\Users\moon\Downloads\GIS\GISPUS\GISPuskesmasLib\obj\Debug\GISPuskesmasLib.dll
+C:\Users\moon\Downloads\GIS\GISPUS\GISPuskesmasLib\obj\Debug\GISPuskesmasLib.pdb

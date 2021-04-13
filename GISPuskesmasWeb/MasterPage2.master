@@ -1,0 +1,154 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage2.master.cs" Inherits="MasterPage2" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head id="Head1" runat="server">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Web GIS</title>
+    <link href="styles/bootstrap.min.css" type="text/css" rel="stylesheet" />
+    <link href="styles/dashboard.css" type="text/css" rel="stylesheet" />
+    <link href="styles/detailsview.css" type="text/css" rel="stylesheet" />
+    <link href="styles/gridview.css" type="text/css" rel="stylesheet" />
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">SIG Puskesmas</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href='<%= ResolveUrl("Default2.aspx") %>'>Peta Puskesmas</a></li>
+                    <%--<li>
+                        <asp:Label ID="SessionCurr" Text="Text" runat="server" />
+                        <asp:HyperLink ID="CurrentSessLoggHyperLink" NavigateUrl="#" runat="server" />
+                    </li>--%>
+                    <li>
+                        <asp:HyperLink ID="LoginHyperLink" NavigateUrl="~/Login.aspx" runat="server" Text="Admin" /></li>
+                    <li>
+                        <asp:HyperLink ID="LogOffHyperLink" NavigateUrl="~/Default2.aspx?logoff=true" runat="server" Text="Logoff" /></li>
+                    <%--<li><a href="<%= ResolveUrl("Default2.aspx?logoff=true") %>">Logoff</a></li>--%>
+                    <%--  <li><a href="#">Profile</a></li>--%>
+                    <%-- <li><a href="#">Help</a></li>--%>
+                </ul>
+                <form class="navbar-form navbar-right">
+                    <%-- <input type="text" class="form-control" placeholder="Search..." />--%>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-3 col-md-2 sidebar">
+                <ul class="nav nav-sidebar">
+                    <%--<li><a id="AKec" runat="server"  href='<%= ResolveUrl("~/Admin/MasterData/Kecamatan.aspx") %>'>Kecamatan</a></li>
+                    <li><a id="AJenisPegawai" runat="server" href='<%= ResolveUrl("~/Admin/MasterData/JenisPegawai.aspx") %>'>Jenis Pegawai</a></li>
+                    <li><a id="APuskesmas" href='<%= ResolveUrl("~/Admin/MasterData/Puskesmas.aspx") %>'>Puskesmas</a></li>
+                    <li><a id="APuskesmasDeti" href='<%= ResolveUrl("~/Admin/MasterData/PuskesmasDetail.aspx") %>'>Puskesmas Detail</a></li>--%>
+                    <li>
+                        <asp:HyperLink ID="KecamatanHyperLink" NavigateUrl="~/Admin/MasterData/Kecamatan.aspx" runat="server" Text="Kecamatan" /></li>
+                    <li>
+                        <asp:HyperLink ID="JenisPegawaiHyperLink" NavigateUrl="~/Admin/MasterData/JenisPegawai.aspx" runat="server" Text="Jenis Pegawai" /></li>
+                    <li>
+                        <asp:HyperLink ID="PuskesmasHyperLink" NavigateUrl="~/Admin/MasterData/Puskesmas.aspx" runat="server" Text="Puskesmas" /></li>
+                    <li>
+                        <asp:HyperLink ID="PuskesmasDetHyperLink" NavigateUrl="~/Admin/MasterData/PuskesmasDetail.aspx" runat="server" Text="Puskesmas Detail" /></li>
+                    <li>
+                        <asp:HyperLink ID="BeritaHyperLink" NavigateUrl="~/Admin/MasterData/Berita.aspx" runat="server" Text="Berita Master" /></li>
+                    <li>
+                        <asp:HyperLink ID="BeritaPageHyperLink" NavigateUrl="~/BeritaPage.aspx" runat="server" Text="Berita Page" /></li>
+                    <li>
+                        <asp:HyperLink ID="InfoPuskesmasHyperLink" NavigateUrl="~/Admin/MasterData/InfoPuskesmas.aspx" runat="server" Text="Info Puskesmas" /></li>
+                    <%--<li><a href="#">Export</a></li>--%>
+                </ul>
+                <ul>
+                    <li style="list-style-type: none;">
+                        <asp:Image ImageUrl="~/images/timthumb.png" Width="100px" Height="110px" AlternateText="Puskesmas" runat="server" />
+                    </li>
+                </ul>
+
+                <ul>
+                    <li style="list-style-type: none;">
+                        <asp:Image ID="Image1" ImageUrl="~/images/1.png" Width="100px" Height="110px" AlternateText="Puskesmas" runat="server" />
+                    </li>
+                </ul>
+                <%--<ul class="nav nav-sidebar">
+                    <li><a href="">Nav item</a></li>
+                    <li><a href="">Nav item again</a></li>
+                    <li><a href="">One more nav</a></li>
+                    <li><a href="">Another nav item</a></li>
+                    <li><a href="">More navigation</a></li>
+                </ul>
+                <ul class="nav nav-sidebar">
+                    <li><a href="">Nav item again</a></li>
+                    <li><a href="">One more nav</a></li>
+                    <li><a href="">Another nav item</a></li>
+                </ul>--%>
+            </div>
+            <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+                <%--  <h1 class="page-header"></h1>--%>
+                <form id="form1" runat="server" class="row placeholders">
+                    <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+                    <div style="float: left; display: inline-block;">
+                        <%--  <asp:Button ID="petaBtn" Text="Peta Puskesmas" runat="server" OnClick="petaBtn_Click" />--%>
+                    </div>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        <p class="back">
+                            <asp:Literal Text="Log in unsuccessful" runat="server" Visible="false" ID="ErrorMessage" />
+                        </p>
+                    </asp:ContentPlaceHolder>
+                    <%--<div class="row placeholders">
+                    <div class="col-xs-6 col-sm-3 placeholder">
+                        <img data-src="holder.js/200x200/auto/sky" class="img-responsive" alt="Generic placeholder thumbnail">
+                        <h4>Label</h4>
+                        <span class="text-muted">Something else</span>
+                    </div>
+                    <div class="col-xs-6 col-sm-3 placeholder">
+                        <img data-src="holder.js/200x200/auto/vine" class="img-responsive" alt="Generic placeholder thumbnail">
+                        <h4>Label</h4>
+                        <span class="text-muted">Something else</span>
+                    </div>
+                    <div class="col-xs-6 col-sm-3 placeholder">
+                        <img data-src="holder.js/200x200/auto/sky" class="img-responsive" alt="Generic placeholder thumbnail">
+                        <h4>Label</h4>
+                        <span class="text-muted">Something else</span>
+                    </div>
+                    <div class="col-xs-6 col-sm-3 placeholder">
+                        <img data-src="holder.js/200x200/auto/vine" class="img-responsive" alt="Generic placeholder thumbnail">
+                        <h4>Label</h4>
+                        <span class="text-muted">Something else</span>
+                    </div>
+                    </div>--%>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+</body>
+</html>
